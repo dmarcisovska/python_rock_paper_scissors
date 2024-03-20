@@ -4,4 +4,10 @@ print("Rock...")
 print("Paper...")
 print("Scissors...")
 
-print(random.randint(1, 3))
+ran_num = random.randint(1, 3)
+
+player_one = None
+# player_two = input("Make your move: ")
+
+print(ran_num)
+
