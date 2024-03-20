@@ -7,7 +7,7 @@ print("Scissors...")
 ran_num = random.randint(1, 3)
 
 computer= None
-player = input("Make your move: ")
+player = input("Make your move: ").lower()
 
 if ran_num == 1:
     computer = "rock"
