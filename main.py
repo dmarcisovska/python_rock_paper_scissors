@@ -13,9 +13,9 @@ print(ran_num)
 
 if ran_num == 1:
     player_one = "rock"
-elif ran_num == 1:
+elif ran_num == 2:
     player_one = "paper"
-elif ran_num == 1:
+elif ran_num == 3:
     player_one = "scissors"
 
 print(player_one)
