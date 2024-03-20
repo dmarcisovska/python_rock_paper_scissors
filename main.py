@@ -6,34 +6,32 @@ print("Scissors...")
 
 ran_num = random.randint(1, 3)
 
-player_one = None
-player_two = input("Make your move: ")
-
-print(ran_num)
+computer= None
+player = input("Make your move: ")
 
 if ran_num == 1:
-    player_one = "rock"
+    computer = "rock"
 elif ran_num == 2:
-    player_one = "paper"
+    computer = "paper"
 elif ran_num == 3:
-    player_one = "scissors"
+    computer = "scissors"
 
-print(player_one)
+print("Computer is playing: ", computer)
 
-if player_one == player_two:
+if computer == player:
     print("it's a tie!")
-elif player_one == "rock" and player_two == "scissors":
-    print("Player one wins")
-elif player_one == "scissors" and player_two == "paper":
-    print("Player one wins")
-elif player_one == "paper" and player_two == "rock":
-    print("Player one wins")
-elif player_two == "rock" and player_one == "scissors":
-    print("Player one wins")
-elif player_two == "scissors" and player_one == "paper":
-    print("Player one wins")
-elif player_two == "paper" and player_one == "rock":
-    print("Player one wins")
+elif computer == "rock" and player == "scissors":
+    print("Computer wins!")
+elif computer == "scissors" and player == "paper":
+    print("Computer wins!")
+elif computer == "paper" and player == "rock":
+    print("Computer wins!")
+elif player == "rock" and computer == "scissors":
+    print("You win!")
+elif player == "scissors" and computer == "paper":
+    print("You win!")
+elif player == "paper" and computer == "rock":
+    print("You win!")
 else:
     print("something went wrong")
 
