@@ -1,10 +1,10 @@
-import random
+from random import randint
 
 print("Rock...")
 print("Paper...")
 print("Scissors...")
 
-ran_num = random.randint(1, 3)
+ran_num = randint(1, 3)
 
 computer= None
 player = input("Make your move: ").lower()
