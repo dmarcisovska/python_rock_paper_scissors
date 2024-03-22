@@ -3,7 +3,7 @@ from random import randint
 comp_score = 0
 usr_score = 0
 
-while comp_score or usr_score < 3:
+while comp_score < 3 and usr_score < 3:
     print("Rock...")
     print("Paper...")
     print("Scissors...")
