@@ -4,6 +4,7 @@ comp_score = 0
 usr_score = 0
 
 while comp_score < 3 and usr_score < 3:
+    print(f"Current score: computer = {comp_score}, you = {usr_score}")
     print("Rock...")
     print("Paper...")
     print("Scissors...")
@@ -21,33 +22,31 @@ while comp_score < 3 and usr_score < 3:
 
     if computer == player:
         print("it's a tie, no one scores!")
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
+
     elif computer == "rock" and player == "scissors":
         print("Computer wins!")
         comp_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     elif computer == "scissors" and player == "paper":
         print("Computer wins!")
         comp_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     elif computer == "paper" and player == "rock":
         print("Computer wins!")
         comp_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     elif player == "rock" and computer == "scissors":
         print("You win!")
         usr_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     elif player == "scissors" and computer == "paper":
         print("You win!")
         usr_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     elif player == "paper" and computer == "rock":
         print("You win!")
         usr_score += 1
-        print(f"Current score: computer = {comp_score}, you = {usr_score}")
     else:
         print("something went wrong")
+
+print(f"Current score: computer = {comp_score}, you = {usr_score}")
+
+
 
 
 
